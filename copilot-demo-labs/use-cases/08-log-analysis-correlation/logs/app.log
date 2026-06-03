@@ -1,0 +1,36 @@
+2026-03-17T10:00:12Z INFO api-gateway request_id=abc01 route=/checkout status=200 latency_ms=83
+2026-03-17T10:00:12Z INFO order-service request_id=abc01 msg="order created" order_id=7001
+2026-03-17T10:00:13Z INFO payment-service request_id=abc01 msg="charge OK" provider=stripe latency_ms=210
+2026-03-17T10:00:14Z INFO notification-service request_id=abc01 msg="confirmation email sent" to="user1@example.com"
+2026-03-17T10:01:30Z INFO api-gateway request_id=abc02 route=/checkout status=200 latency_ms=95
+2026-03-17T10:01:31Z INFO order-service request_id=abc02 msg="order created" order_id=7002
+2026-03-17T10:01:31Z WARN payment-service request_id=abc02 msg="provider slow" provider=stripe latency_ms=1800
+2026-03-17T10:02:11Z WARN order-service request_id=abc03 msg="retry payment provider" retries=1
+2026-03-17T10:02:40Z ERROR payment-service request_id=abc03 msg="provider timeout" provider=stripe timeout_ms=3000
+2026-03-17T10:02:41Z ERROR order-service request_id=abc03 msg="payment failed after retries" retries=3
+2026-03-17T10:02:41Z ERROR api-gateway request_id=abc03 route=/checkout status=502 latency_ms=9250
+2026-03-17T10:02:55Z INFO api-gateway request_id=abc04 route=/checkout status=200 latency_ms=110
+2026-03-17T10:02:56Z INFO order-service request_id=abc04 msg="order created" order_id=7003
+2026-03-17T10:02:57Z ERROR payment-service request_id=abc04 msg="provider timeout" provider=stripe timeout_ms=3000
+2026-03-17T10:02:58Z ERROR api-gateway request_id=abc04 route=/checkout status=502 latency_ms=3105
+2026-03-17T10:03:05Z INFO api-gateway request_id=abc05 route=/inventory status=200 latency_ms=45
+2026-03-17T10:03:05Z INFO db request_id=abc05 query="select inventory" latency_ms=12
+2026-03-17T10:03:08Z WARN db request_id=abc06 query="update inventory" latency_ms=1600
+2026-03-17T10:03:10Z ERROR order-service request_id=abc06 msg="lock wait timeout exceeded" table=inventory
+2026-03-17T10:03:11Z ERROR api-gateway request_id=abc06 route=/checkout status=500 latency_ms=2120
+2026-03-17T10:03:30Z WARN db request_id=abc07 query="update inventory" latency_ms=2100
+2026-03-17T10:03:31Z ERROR order-service request_id=abc07 msg="lock wait timeout exceeded" table=inventory
+2026-03-17T10:03:32Z ERROR api-gateway request_id=abc07 route=/checkout status=500 latency_ms=2450
+2026-03-17T10:03:45Z WARN notification-service request_id=abc03 msg="failed to send failure email" error="SMTP connection refused"
+2026-03-17T10:04:00Z INFO db request_id=abc08 query="select inventory" latency_ms=8
+2026-03-17T10:04:01Z INFO api-gateway request_id=abc08 route=/inventory status=200 latency_ms=40
+2026-03-17T10:04:13Z INFO payment-service request_id=abc09 msg="provider recovered" provider=stripe
+2026-03-17T10:04:25Z INFO api-gateway request_id=abc09 route=/checkout status=200 latency_ms=92
+2026-03-17T10:04:26Z INFO order-service request_id=abc09 msg="order created" order_id=7004
+2026-03-17T10:04:27Z INFO payment-service request_id=abc09 msg="charge OK" provider=stripe latency_ms=195
+2026-03-17T10:04:30Z INFO db request_id=abc10 query="update inventory" latency_ms=35
+2026-03-17T10:04:31Z INFO notification-service request_id=abc09 msg="confirmation email sent" to="user4@example.com"
+2026-03-17T10:05:00Z INFO api-gateway request_id=abc10 route=/checkout status=200 latency_ms=88
+2026-03-17T10:05:01Z INFO order-service request_id=abc10 msg="order created" order_id=7005
+2026-03-17T10:05:02Z INFO payment-service request_id=abc10 msg="charge OK" provider=stripe latency_ms=180
+2026-03-17T10:05:03Z INFO notification-service request_id=abc10 msg="confirmation email sent" to="user5@example.com"
