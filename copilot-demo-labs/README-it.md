@@ -53,15 +53,15 @@ Consentire ai team di provare Copilot su esempi realistici con un flusso guidato
 
 | # | Laboratorio | Difficoltà | Durata |
 |---|-------------|------------|--------|
-| 01 | [Spiegazione Codice e Documentazione](use-cases/01-code-explanation-docs/) | Base | 10 min |
-| 02 | [Refactoring e Performance](use-cases/02-refactoring-performance/) | Intermedio | 15 min |
-| 03 | [Debugging Semplice](use-cases/03-debugging-simple/) | Base | 10 min |
-| 04 | [Debugging Complesso](use-cases/04-debugging-complex/) | Intermedio | 15 min |
-| 05 | [Da Requisiti a Codice](use-cases/05-functional-to-code-generation/) | Intermedio | 20 min |
-| 06 | [Generazione Suite di Test](use-cases/06-testing-suite-generation/) | Intermedio | 40 min |
-| 07 | [Policy e Compliance](use-cases/07-policy-compliance/) | Intermedio | 15 min |
-| 08 | [Analisi Log e Correlazione](use-cases/08-log-analysis-correlation/) | Intermedio | 15 min |
-| 09 | [Prompt Engineering Core](use-cases/09-prompt-engineering-core/) | Base | 50 min |
-| 10 | [Prompt Engineering Advanced](use-cases/10-prompt-engineering-advanced/) | Intermedio | 50 min |
-| 11 | [Analisi Debito Tecnico e Refactoring](use-cases/11-technical-debt-refactoring/) | Intermedio | 20 min |
-| 12 | [Analisi Sicurezza](use-cases/12-security-analysis/) | Intermedio | 15 min |
+| 01 | [Prompt Engineering Core](use-cases/01-prompt-engineering-core/) | Base | 50 min |
+| 02 | [Prompt Engineering Advanced](use-cases/02-prompt-engineering-advanced/) | Intermedio | 50 min |
+| 03 | [Spiegazione Codice e Documentazione](use-cases/03-code-explanation-docs/) | Base | 10 min |
+| 04 | [Debugging Semplice](use-cases/04-debugging-simple/) | Base | 10 min |
+| 05 | [Debugging Complesso](use-cases/05-debugging-complex/) | Intermedio | 15 min |
+| 06 | [Refactoring e Performance](use-cases/06-refactoring-performance/) | Intermedio | 15 min |
+| 07 | [Generazione Suite di Test](use-cases/07-testing-suite-generation/) | Intermedio | 40 min |
+| 08 | [Da Requisiti a Codice](use-cases/08-functional-to-code-generation/) | Intermedio | 20 min |
+| 09 | [Analisi Debito Tecnico e Refactoring](use-cases/09-technical-debt-refactoring/) | Intermedio | 20 min |
+| 10 | [Analisi Sicurezza](use-cases/10-security-analysis/) | Intermedio | 15 min |
+| 11 | [Policy e Compliance](use-cases/11-policy-compliance/) | Intermedio | 15 min |
+| 12 | [Analisi Log e Correlazione](use-cases/12-log-analysis-correlation/) | Intermedio | 15 min |
